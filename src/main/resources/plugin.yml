@@ -1,0 +1,8 @@
+name: AdvancedGUI-DiscordConnectorDev
+version: 1.0.0
+main: de.hopedev.Main
+author: HopeDev
+description: My awesome Spigot plugin
+api-version: 1.17
+depend: [AdvancedGUI]
+
