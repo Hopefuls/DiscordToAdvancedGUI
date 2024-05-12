@@ -8,4 +8,4 @@ To use this plugin, you need to have the AdvancedGUI plugin installed.
 
 ## Obtaining the Layout File
 
-The layout file for this plugin can be obtained from the following URL: [content.hopefuls.de/AdvancedGUI](content.hopefuls.de/AdvancedGUI)
+The layout file for this plugin can be obtained from the following URL: [content.hopefuls.de/AdvancedGUI](https://content.hopefuls.de/AdvancedGUI)
