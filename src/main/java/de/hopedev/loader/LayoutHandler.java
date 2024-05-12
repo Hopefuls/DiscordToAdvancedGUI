@@ -28,6 +28,7 @@ public class LayoutHandler implements LayoutExtension {
     public static String SEND_BUTTON_ID = "68VFQJ4N";
     public static String TEXT_INPUT_ID = "20J4lC6t";
     public static String MESSAGES_GROUP_ID = "U6veq9QJ";
+    public static String PLACEHOLDER_ID = "uvIZtO0n";
     public static ArrayList<DiscordMessage> savedMessages = new ArrayList<DiscordMessage>();
     public static ArrayList<Interaction> guiInteractions = new ArrayList<Interaction>();
 
@@ -75,6 +76,7 @@ public class LayoutHandler implements LayoutExtension {
 
     @EventHandler
     public void onInteract(GuiInteractionBeginEvent event) {
+        event.getInteraction().getComponentTree().locate(PLACEHOLDER_ID).setHidden(true);
         event.getInteraction().getComponentTree().locate(SEND_BUTTON_ID).setClickAction((interaction, player, primaryTrigger) -> {
             // get the text input field
             TextInputComponent textInput = (TextInputComponent) interaction.getComponentTree().locate(TEXT_INPUT_ID);
